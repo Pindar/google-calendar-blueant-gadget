@@ -2,6 +2,7 @@
 <Module>
   <ModulePrefs title="Set Title Example">
     <Require feature="settitle"/>
+    <Require feature="google.calendar-0.5"/>
   </ModulePrefs>
   <Content type="html">
   <![CDATA[
@@ -9,7 +10,7 @@
     function changeTitle(form) {
       var newTitle = form.inputbox.value;
       gadgets.window.setTitle(newTitle);
-      console.log(calendar.event);
+      console.log(google.calendar.event);
     }
     </script>
 <FORM NAME="myform" ACTION="" METHOD="GET">Change the Gadget Title: <BR><BR>
