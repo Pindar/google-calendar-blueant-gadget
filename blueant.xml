@@ -7,6 +7,7 @@
   <Content type="html">
   <![CDATA[
     <script type="text/javascript">
+    console.log(google.calendar);
     function changeTitle(form) {
       var newTitle = form.inputbox.value;
       gadgets.window.setTitle(newTitle);
